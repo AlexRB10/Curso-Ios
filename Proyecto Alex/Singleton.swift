@@ -45,15 +45,22 @@ class ControllerData {
                            Pista.init(nombrePista: "Toneladas", nombreFoto: "")]
     
     
-    var munay : [Pista] = [Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),]
+    var munay : [Pista] = [Pista.init(nombrePista: "Complicidad", nombreFoto: ""),
+                           Pista.init(nombrePista: "Ya", nombreFoto: ""),
+                           Pista.init(nombrePista: "Si me abrazaras", nombreFoto: ""),
+                           Pista.init(nombrePista: "Inmunes", nombreFoto: ""),
+                           Pista.init(nombrePista: "Que se entere Madrid", nombreFoto: ""),
+                           Pista.init(nombrePista: "Santo y Seña", nombreFoto: ""),
+                           Pista.init(nombrePista: "Te has perdido quién soy", nombreFoto: ""),
+                           Pista.init(nombrePista: "Nunca me conoció", nombreFoto: ""),
+                           Pista.init(nombrePista: "Sucederá", nombreFoto: ""),
+                           Pista.init(nombrePista: "Descubrí", nombreFoto: ""),
+                           Pista.init(nombrePista: "El amor no se explica", nombreFoto: ""),
+                           Pista.init(nombrePista: "Manzanas envenenadas", nombreFoto: ""),
+                           Pista.init(nombrePista: "Porque queramos vernos", nombreFoto: ""),
+                           Pista.init(nombrePista: "Complicidad", nombreFoto: ""),]
+    
+    
     
     var quitateLasGafas : [Pista] = [Pista.init(nombrePista: "", nombreFoto: ""),
                            Pista.init(nombrePista: "", nombreFoto: ""),
