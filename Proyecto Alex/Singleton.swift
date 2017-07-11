@@ -16,18 +16,18 @@ class ControllerData {
         
     }
     
-    var albumes : [Album] = [Album.init(nombreAlbum: "El Dorado", nombreArtista: "Shakira", fotoAlbum: ""),
-                             Album.init(nombreAlbum: "Munay", nombreArtista: "Vanesa Martín", fotoAlbum: ""),
-                             Album.init(nombreAlbum: "Quítate Las Gafas", nombreArtista: "Melendi", fotoAlbum: ""),
-                             Album.init(nombreAlbum: "La Montaña Rusa", nombreArtista: "Dani Martín", fotoAlbum: ""),
-                             Album.init(nombreAlbum: "Qué Tú Tienes", nombreArtista: "Dvicio", fotoAlbum: ""),
-                             Album.init(nombreAlbum: "El Planeta Imaginario", nombreArtista: "La Oreja de Van Gogh", fotoAlbum: ""),
-                             Album.init(nombreAlbum: "Hijos Del Mar", nombreArtista: "Davis Bisbal", fotoAlbum: ""),
-                             Album.init(nombreAlbum: "Primera Cita", nombreArtista: "CNCO", fotoAlbum: ""),
-                             Album.init(nombreAlbum: "Destino", nombreArtista: "Antonio Orozco", fotoAlbum: ""),
-                             Album.init(nombreAlbum: "Divide", nombreArtista: "Ed Sheeran", fotoAlbum: ""),
-                             Album.init(nombreAlbum: "24K Magic", nombreArtista: "Bruno Mars", fotoAlbum: ""),
-                             Album.init(nombreAlbum: "Dangerous Woman", nombreArtista: "Ariana Grande", fotoAlbum: "")]
+    var albumes : [Album] = [Album.init(nombreAlbum: "El Dorado", nombreArtista: "Shakira", fotoAlbum: "paisaje1.jpeg"),
+                             Album.init(nombreAlbum: "Munay", nombreArtista: "Vanesa Martín", fotoAlbum: "paisaje2.jpeg"),
+                             Album.init(nombreAlbum: "Quítate Las Gafas", nombreArtista: "Melendi", fotoAlbum: "paisaje3.jpeg"),
+                             Album.init(nombreAlbum: "La Montaña Rusa", nombreArtista: "Dani Martín", fotoAlbum: "paisaje4.jpeg"),
+                             Album.init(nombreAlbum: "Qué Tú Tienes", nombreArtista: "Dvicio", fotoAlbum: "paisaje1.jpeg"),
+                             Album.init(nombreAlbum: "El Planeta Imaginario", nombreArtista: "La Oreja de Van Gogh", fotoAlbum: "paisaje2.jpeg"),
+                             Album.init(nombreAlbum: "Hijos Del Mar", nombreArtista: "Davis Bisbal", fotoAlbum: "paisaje3.jpeg"),
+                             Album.init(nombreAlbum: "Primera Cita", nombreArtista: "CNCO", fotoAlbum: "paisaje4.jpeg"),
+                             Album.init(nombreAlbum: "Destino", nombreArtista: "Antonio Orozco", fotoAlbum: "paisaje1.jpeg"),
+                             Album.init(nombreAlbum: "Divide", nombreArtista: "Ed Sheeran", fotoAlbum: "paisaje2.jpeg"),
+                             Album.init(nombreAlbum: "24K Magic", nombreArtista: "Bruno Mars", fotoAlbum: "paisaje3.jpeg"),
+                             Album.init(nombreAlbum: "Dangerous Woman", nombreArtista: "Ariana Grande", fotoAlbum: "paisaje4.jpeg")]
     
     
     var elDorado : [Pista] = [Pista.init(nombrePista: "", nombreFoto: ""),
