@@ -12,7 +12,7 @@ import UIKit
 
 class MainViewController : UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var datasource: [String] = ["paisaje1.jpeg","paisaje2.jpeg","paisaje3.jpeg","paisaje4.jpeg","paisaje1.jpeg","paisaje2.jpeg","paisaje3.jpeg","paisaje4.jpeg","paisaje1.jpeg","paisaje2.jpeg","paisaje3.jpeg","paisaje4.jpeg","paisaje1.jpeg","paisaje2.jpeg","paisaje3.jpeg","paisaje4.jpeg","paisaje1.jpeg","paisaje2.jpeg","paisaje3.jpeg","paisaje4.jpeg"]
+    var datasource: [Album] = []
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -22,6 +22,8 @@ class MainViewController : UIViewController, UICollectionViewDelegate, UICollect
         super.viewDidLoad()
         self.collectionView.delegate   = self
         self.collectionView.dataSource = self
+        
+        datasource = ControllerData.shareController.albumes
     }
     
     // MARK: - UICollectionViewDataSource
@@ -37,7 +39,7 @@ class MainViewController : UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! PhotoGridCell
         
-        cell.photoImageView.image = UIImage.init(named: self.datasource[indexPath.item])
+        cell.photoImageView.image = UIImage.init(named: self.datasource[indexPath.item].fotoAlbum)
         return cell
     }
     
