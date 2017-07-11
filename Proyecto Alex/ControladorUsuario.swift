@@ -20,11 +20,7 @@ class ControladorUsuario : UIViewController, UITableViewDelegate, UITableViewDat
     
     let titulos = ["Albumes"]
     
-    var albumMostrar = ["Humo", "V", "Quitate las gafas"]
-    var artistaMostrar = ["Jarabe de Palo", "Maroon 5", "Melendi"]
-    var fotosMostrar = [""]
-    
-    var hola = 0 ;
+    var albumes :[Album] = []
     
     let usuario = Usuario.init(nombre: "Alexandre", apellido: "Rosario Benítez", imagen : "paisaje4.jpeg")
     
@@ -35,6 +31,8 @@ class ControladorUsuario : UIViewController, UITableViewDelegate, UITableViewDat
         imagenUsuaio.image = UIImage.init(named: usuario.imagen)
         nombre.text = usuario.nombre
         apellido.text = usuario.apellido
+        
+        albumes = ControllerData.shareController.albumes
         
         self.tableView.delegate   = self
         self.tableView.dataSource = self
@@ -60,11 +58,12 @@ class ControladorUsuario : UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Seleccionó la fila \(indexPath.row) de la sección \(titulos[indexPath.section])")
+        
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return albumMostrar.count
+        return albumes.count
     }
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
@@ -80,12 +79,11 @@ class ControladorUsuario : UIViewController, UITableViewDelegate, UITableViewDat
         // let cell = UITableViewCell.init(style: .default, reuseIdentifier: "mycellId")
         let cell = tableView.dequeueReusableCell(withIdentifier: "CeldaPersonalizada") as! CeldaPerzonalizada
         
-        let imageStr = String.init(format: "paisaje%lu.jpeg", indexPath.row+1)
-        hola += 1
+        let imageStr = String.init(format: albumes[indexPath.row].fotoAlbum)
+        
         cell.imagen?.image = UIImage.init(named: imageStr)
-        cell.titulo?.text = albumMostrar[indexPath.row]
-        cell.detalle?.text = artistaMostrar[indexPath.row]
-        print(hola)
+        cell.titulo?.text = albumes[indexPath.row].nombreAlbum
+        cell.detalle?.text = albumes[indexPath.row].nombreArtista
         return cell
     }
     
