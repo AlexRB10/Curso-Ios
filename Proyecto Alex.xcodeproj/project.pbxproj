@@ -24,6 +24,7 @@
 		FB5C5D1E1F0661DA00D70831 /* paisaje3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FB5C5D1B1F0661DA00D70831 /* paisaje3.jpeg */; };
 		FB5C5D201F066E0000D70831 /* paisaje4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FB5C5D1F1F066E0000D70831 /* paisaje4.jpeg */; };
 		FB5C5D221F06760F00D70831 /* Colores.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5C5D211F06760F00D70831 /* Colores.swift */; };
+		FB6328C91F152D4A00047481 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6328C81F152D4A00047481 /* Singleton.swift */; };
 		FB6644601F0BEAA700DC9E36 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66445F1F0BEAA700DC9E36 /* Usuario.swift */; };
 		FB6644621F0BEC7500DC9E36 /* ControladorUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6644611F0BEC7500DC9E36 /* ControladorUsuario.swift */; };
 		FB705DBF1F0E8B62006BD329 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB705DBE1F0E8B62006BD329 /* MainViewController.swift */; };
@@ -72,6 +73,7 @@
 		FB5C5D1B1F0661DA00D70831 /* paisaje3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paisaje3.jpeg; sourceTree = "<group>"; };
 		FB5C5D1F1F066E0000D70831 /* paisaje4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paisaje4.jpeg; sourceTree = "<group>"; };
 		FB5C5D211F06760F00D70831 /* Colores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colores.swift; sourceTree = "<group>"; };
+		FB6328C81F152D4A00047481 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		FB66445F1F0BEAA700DC9E36 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		FB6644611F0BEC7500DC9E36 /* ControladorUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorUsuario.swift; sourceTree = "<group>"; };
 		FB705DBE1F0E8B62006BD329 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				FB5C5D211F06760F00D70831 /* Colores.swift */,
 				FB66445F1F0BEAA700DC9E36 /* Usuario.swift */,
 				FB705DC21F0E9AF8006BD329 /* PhotoGridCell.swift */,
+				FB6328C81F152D4A00047481 /* Singleton.swift */,
 			);
 			name = Modelo;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB5B99731F05668800BEB8F6 /* CeldaPerzonalizada.swift in Sources */,
+				FB6328C91F152D4A00047481 /* Singleton.swift in Sources */,
 				FB5C5D221F06760F00D70831 /* Colores.swift in Sources */,
 				FB5B997F1F0569A200BEB8F6 /* Pista.swift in Sources */,
 				FB5B99441F05664900BEB8F6 /* ControladorBusqueda.swift in Sources */,
