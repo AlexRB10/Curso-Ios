@@ -58,6 +58,7 @@ class ControladorUsuario : UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Seleccionó la fila \(indexPath.row) de la sección \(titulos[indexPath.section])")
+        
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
     

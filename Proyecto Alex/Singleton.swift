@@ -16,10 +16,10 @@ class ControllerData {
         
     }
     
-    var albumes : [Album] = [Album.init(nombreAlbum: "El Dorado", nombreArtista: "Shakira", fotoAlbum: "paisaje1.jpeg"),
-                             Album.init(nombreAlbum: "Munay", nombreArtista: "Vanesa Martín", fotoAlbum: "paisaje2.jpeg"),
-                             Album.init(nombreAlbum: "Quítate Las Gafas", nombreArtista: "Melendi", fotoAlbum: "paisaje3.jpeg"),
-                             Album.init(nombreAlbum: "La Montaña Rusa", nombreArtista: "Dani Martín", fotoAlbum: "paisaje4.jpeg"),
+    var albumes : [Album] = [Album.init(nombreAlbum: "El Dorado", nombreArtista: "Shakira", fotoAlbum: "paisaje4.jpeg"),
+                             Album.init(nombreAlbum: "Munay", nombreArtista: "Vanesa Martín", fotoAlbum: "paisaje3.jpeg"),
+                             Album.init(nombreAlbum: "Quítate Las Gafas", nombreArtista: "Melendi", fotoAlbum: "paisaje2.jpeg"),
+                             Album.init(nombreAlbum: "La Montaña Rusa", nombreArtista: "Dani Martín", fotoAlbum: "paisaje1.jpeg"),
                              Album.init(nombreAlbum: "Qué Tú Tienes", nombreArtista: "Dvicio", fotoAlbum: "paisaje1.jpeg"),
                              Album.init(nombreAlbum: "El Planeta Imaginario", nombreArtista: "La Oreja de Van Gogh", fotoAlbum: "paisaje2.jpeg"),
                              Album.init(nombreAlbum: "Hijos Del Mar", nombreArtista: "Davis Bisbal", fotoAlbum: "paisaje3.jpeg"),

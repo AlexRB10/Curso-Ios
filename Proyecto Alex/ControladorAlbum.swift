@@ -13,11 +13,15 @@ class ControladorAlbum: UIViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet var tableView: UITableView!
     
         let titulos = ["Album"]
+
+    var canciones :[Pista] = []
     
         override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate   = self
         self.tableView.dataSource = self
+        
+        canciones = ControllerData.shareController.elDorado
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -30,7 +34,7 @@ class ControladorAlbum: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return canciones.count
     }
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
@@ -46,10 +50,9 @@ class ControladorAlbum: UIViewController, UITableViewDelegate, UITableViewDataSo
         // let cell = UITableViewCell.init(style: .default, reuseIdentifier: "mycellId")
         let cell = tableView.dequeueReusableCell(withIdentifier: "CeldaPersonalizada") as! CeldaPerzonalizada
         
-        let imageStr = String.init(format: "paisaje%lu.jpeg", indexPath.row+1)
+        let imageStr = String.init(format: canciones[indexPath.row].nombreFoto)
         cell.imagen?.image = UIImage.init(named: imageStr)
-        cell.titulo?.text = "Adios"
-        cell.detalle?.text = "Detalles"
+        cell.titulo?.text = canciones[indexPath.row].nombrePista
         
         return cell
 }
