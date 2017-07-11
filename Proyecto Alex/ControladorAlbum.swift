@@ -12,11 +12,11 @@ class ControladorAlbum: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     @IBOutlet var tableView: UITableView!
     
-        let titulos = ["Album"]
-
+    let titulos = ["Album"]
+    
     var canciones :[Pista] = []
     
-        override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate   = self
         self.tableView.dataSource = self
@@ -30,6 +30,7 @@ class ControladorAlbum: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Seleccionó la fila \(indexPath.row) de la sección \(titulos[indexPath.section])")
+        
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
     
@@ -55,6 +56,6 @@ class ControladorAlbum: UIViewController, UITableViewDelegate, UITableViewDataSo
         cell.titulo?.text = canciones[indexPath.row].nombrePista
         
         return cell
-}
-
+    }
+    
 }
