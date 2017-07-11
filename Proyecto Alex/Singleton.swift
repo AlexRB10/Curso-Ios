@@ -30,15 +30,20 @@ class ControllerData {
                              Album.init(nombreAlbum: "Dangerous Woman", nombreArtista: "Ariana Grande", fotoAlbum: "paisaje4.jpeg")]
     
     
-    var elDorado : [Pista] = [Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),
-                           Pista.init(nombrePista: "", nombreFoto: ""),]
+    var elDorado : [Pista] = [Pista.init(nombrePista: "Me Enamoré", nombreFoto: ""),
+                           Pista.init(nombrePista: "Nada", nombreFoto: ""),
+                           Pista.init(nombrePista: "Chantaje", nombreFoto: ""),
+                           Pista.init(nombrePista: "When a Woman", nombreFoto: ""),
+                           Pista.init(nombrePista: "Amarillo", nombreFoto: ""),
+                           Pista.init(nombrePista: "Perro Fiel", nombreFoto: ""),
+                           Pista.init(nombrePista: "Trap", nombreFoto: ""),
+                           Pista.init(nombrePista: "Comme moi", nombreFoto: ""),
+                           Pista.init(nombrePista: "Coconut Tree", nombreFoto: ""),
+                           Pista.init(nombrePista: "La Bicicleta", nombreFoto: ""),
+                           Pista.init(nombrePista: "Déjà vu", nombreFoto: ""),
+                           Pista.init(nombrePista: "What We Said", nombreFoto: ""),
+                           Pista.init(nombrePista: "Toneladas", nombreFoto: "")]
+    
     
     var munay : [Pista] = [Pista.init(nombrePista: "", nombreFoto: ""),
                            Pista.init(nombrePista: "", nombreFoto: ""),
