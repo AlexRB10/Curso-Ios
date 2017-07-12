@@ -11,23 +11,25 @@ import Foundation
 class ControllerData {
 
     static let shareController = ControllerData()
+    var albumes: [Album]
     private init(){
-        
+         albumes = [Album.init(nombreAlbum: "El Dorado", nombreArtista: "Shakira", fotoAlbum: "Shakira.png",pista: elDorado),
+                                 Album.init(nombreAlbum: "Munay", nombreArtista: "Vanesa Martín", fotoAlbum: "vanesa.jpg", pista: munay),
+                                 Album.init(nombreAlbum: "Quítate Las Gafas", nombreArtista: "Melendi", fotoAlbum: "melendi.jpg", pista: quitateLasGafas),
+                                 Album.init(nombreAlbum: "La Montaña Rusa", nombreArtista: "Dani Martín", fotoAlbum: "dani martin.png", pista: laMontañaRusa),
+                                 Album.init(nombreAlbum: "Qué Tú Tienes", nombreArtista: "Dvicio", fotoAlbum: "dvicio.jpg", pista: queTuTienes),
+                                 Album.init(nombreAlbum: "El Planeta Imaginario", nombreArtista: "La Oreja de Van Gogh", fotoAlbum: "la oreja.jpg", pista: elPlatenaImagiario),
+                                 Album.init(nombreAlbum: "Hijos Del Mar", nombreArtista: "Davis Bisbal", fotoAlbum: "david bisbal.png", pista: hijosDelMar),
+                                 Album.init(nombreAlbum: "Primera Cita", nombreArtista: "CNCO", fotoAlbum: "cnco.jpg", pista: primeraCita),
+                                 Album.init(nombreAlbum: "Amor De Los Dos", nombreArtista: "Bustamante", fotoAlbum: "bustamante.jpg", pista: amorDeLosDos),
+                                 Album.init(nombreAlbum: "Divide", nombreArtista: "Ed Sheeran", fotoAlbum: "divide.jpg", pista: divide),
+                                 Album.init(nombreAlbum: "24K Magic", nombreArtista: "Bruno Mars", fotoAlbum: "Bruno.jpg", pista: magic),
+                                 Album.init(nombreAlbum: "Dangerous Woman", nombreArtista: "Ariana Grande", fotoAlbum: "ariana Grande.jpg", pista: dangerousWoman )]
         
     }
     
-    var albumes : [Album] = [Album.init(nombreAlbum: "El Dorado", nombreArtista: "Shakira", fotoAlbum: "Shakira.png"),
-                             Album.init(nombreAlbum: "Munay", nombreArtista: "Vanesa Martín", fotoAlbum: "vanesa.jpg"),
-                             Album.init(nombreAlbum: "Quítate Las Gafas", nombreArtista: "Melendi", fotoAlbum: "melendi.jpg"),
-                             Album.init(nombreAlbum: "La Montaña Rusa", nombreArtista: "Dani Martín", fotoAlbum: "dani martin.png"),
-                             Album.init(nombreAlbum: "Qué Tú Tienes", nombreArtista: "Dvicio", fotoAlbum: "dvicio.jpg"),
-                             Album.init(nombreAlbum: "El Planeta Imaginario", nombreArtista: "La Oreja de Van Gogh", fotoAlbum: "la oreja.jpg"),
-                             Album.init(nombreAlbum: "Hijos Del Mar", nombreArtista: "Davis Bisbal", fotoAlbum: "david bisbal.png"),
-                             Album.init(nombreAlbum: "Primera Cita", nombreArtista: "CNCO", fotoAlbum: "cnco.jpg"),
-                             Album.init(nombreAlbum: "Amor De Los Dos", nombreArtista: "Bustamante", fotoAlbum: "bustamante.jpg"),
-                             Album.init(nombreAlbum: "Divide", nombreArtista: "Ed Sheeran", fotoAlbum: "divide.jpg"),
-                             Album.init(nombreAlbum: "24K Magic", nombreArtista: "Bruno Mars", fotoAlbum: "Bruno.jpg"),
-                             Album.init(nombreAlbum: "Dangerous Woman", nombreArtista: "Ariana Grande", fotoAlbum: "ariana Grande.jpg")]
+    
+
     
     
     var elDorado : [Pista] = [Pista.init(nombrePista: "Me Enamoré", nombreFoto: "Shakira.png"),
@@ -63,8 +65,7 @@ class ControllerData {
     
     
     
-    var quitateLasGafas : [Pista] = [Pista.init(nombrePista: "", nombreFoto: "melendi.jpg"),
-                                     Pista.init(nombrePista: "Flores de agua y plomo", nombreFoto: "melendi.jpg"),
+    var quitateLasGafas : [Pista] = [Pista.init(nombrePista: "Flores de agua y plomo", nombreFoto: "melendi.jpg"),
                                      Pista.init(nombrePista: "Destino o casualidad", nombreFoto: "melendi.jpg"),
                                      Pista.init(nombrePista: "Hijos del mal", nombreFoto: "melendi.jpg"),
                                      Pista.init(nombrePista: "Desde que estamos juntos", nombreFoto: "melendi.jpg"),
@@ -77,21 +78,20 @@ class ControllerData {
                                      Pista.init(nombrePista: "Yo me veo contigo", nombreFoto: "melendi.jpg")]
     
     var laMontañaRusa : [Pista] = [
-        Pista.init(nombrePista: "Las Ganas", nombreFoto: "dani martin.png"),
-        Pista.init(nombrePista: "Los Charcos", nombreFoto: "dani martin.png"),
-        Pista.init(nombrePista: "París", nombreFoto: "dani martin.png"),
-        Pista.init(nombrePista: "Paloma", nombreFoto: "dani martin.png"),
-        Pista.init(nombrePista: "Dibujas", nombreFoto: "dani martin.png"),
-        Pista.init(nombrePista: "Nada más que tú", nombreFoto: "dani martin.png"),
-        Pista.init(nombrePista: "Que se mueran de envidia", nombreFoto: "dani martin.png"),
-        Pista.init(nombrePista: "Romperás", nombreFoto: "dani martin.png"),
-        Pista.init(nombrePista: "Guerra de pasos", nombreFoto: "dani martin.png"),
-        Pista.init(nombrePista: "Pelear", nombreFoto: "dani martin.png"),
-        Pista.init(nombrePista: "Ahora", nombreFoto: "dani martin.png"),
-        Pista.init(nombrePista: "Madrid, Madrid, Madrid", nombreFoto: "dani martin.png"),]
+                                    Pista.init(nombrePista: "Las Ganas", nombreFoto: "dani martin.png"),
+                                    Pista.init(nombrePista: "Los Charcos", nombreFoto: "dani martin.png"),
+                                    Pista.init(nombrePista: "París", nombreFoto: "dani martin.png"),
+                                    Pista.init(nombrePista: "Paloma", nombreFoto: "dani martin.png"),
+                                    Pista.init(nombrePista: "Dibujas", nombreFoto: "dani martin.png"),
+                                    Pista.init(nombrePista: "Nada más que tú", nombreFoto: "dani martin.png"),
+                                    Pista.init(nombrePista: "Que se mueran de envidia", nombreFoto: "dani martin.png"),
+                                    Pista.init(nombrePista: "Romperás", nombreFoto: "dani martin.png"),
+                                    Pista.init(nombrePista: "Guerra de pasos", nombreFoto: "dani martin.png"),
+                                    Pista.init(nombrePista: "Pelear", nombreFoto: "dani martin.png"),
+                                    Pista.init(nombrePista: "Ahora", nombreFoto: "dani martin.png"),
+                                    Pista.init(nombrePista: "Madrid, Madrid, Madrid", nombreFoto: "dani martin.png"),]
     
-    var queTuTienes : [Pista] = [Pista.init(nombrePista: "", nombreFoto: "dvicio.jpg"),
-                                 Pista.init(nombrePista: "Idiota", nombreFoto: "dvicio.jpg"),
+    var queTuTienes : [Pista] = [Pista.init(nombrePista: "Idiota", nombreFoto: "dvicio.jpg"),
                                  Pista.init(nombrePista: "Casi humanos", nombreFoto: "dvicio.jpg"),
                                  Pista.init(nombrePista: "Qué tienes tú", nombreFoto: "dvicio.jpg"),
                                  Pista.init(nombrePista: "Quién soy", nombreFoto: "dvicio.jpg"),
@@ -105,8 +105,7 @@ class ControllerData {
                                  Pista.init(nombrePista: "Superhéroe", nombreFoto: "dvicio.jpg"),]
     
     
-    var elPlatenaImagiario : [Pista] = [Pista.init(nombrePista: "", nombreFoto: "la oreja.jpg"),
-                                        Pista.init(nombrePista: "Estoy contigo", nombreFoto: "la oreja.jpg"),
+    var elPlatenaImagiario : [Pista] = [Pista.init(nombrePista: "Estoy contigo", nombreFoto: "la oreja.jpg"),
                                         Pista.init(nombrePista: "Diciembre", nombreFoto: "la oreja.jpg"),
                                         Pista.init(nombrePista: "Verano", nombreFoto: "la oreja.jpg"),
                                         Pista.init(nombrePista: "Esa chica", nombreFoto: "la oreja.jpg"),

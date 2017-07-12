@@ -21,7 +21,6 @@ class ControladorAlbum: UIViewController, UITableViewDelegate, UITableViewDataSo
         self.tableView.delegate   = self
         self.tableView.dataSource = self
         
-        canciones = ControllerData.shareController.elDorado
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -29,7 +28,10 @@ class ControladorAlbum: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         print("Seleccionó la fila \(indexPath.row) de la sección \(titulos[indexPath.section])")
+        
+        
         
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
