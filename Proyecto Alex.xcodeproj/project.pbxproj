@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB4FA71D1F161B84007F7762 /* ariana grande.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7131F161B84007F7762 /* ariana grande.jpg */; };
+		FB4FA71E1F161B84007F7762 /* bruno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7141F161B84007F7762 /* bruno.jpg */; };
+		FB4FA71F1F161B84007F7762 /* bustamante.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7151F161B84007F7762 /* bustamante.jpg */; };
+		FB4FA7201F161B84007F7762 /* cnco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7161F161B84007F7762 /* cnco.jpg */; };
+		FB4FA7211F161B84007F7762 /* dani martin.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7171F161B84007F7762 /* dani martin.png */; };
+		FB4FA7221F161B84007F7762 /* david bisbal.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7181F161B84007F7762 /* david bisbal.png */; };
+		FB4FA7231F161B84007F7762 /* divide.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7191F161B84007F7762 /* divide.jpg */; };
+		FB4FA7241F161B84007F7762 /* dvicio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA71A1F161B84007F7762 /* dvicio.jpg */; };
+		FB4FA7251F161B84007F7762 /* la oreja.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA71B1F161B84007F7762 /* la oreja.jpg */; };
+		FB4FA7261F161B84007F7762 /* melendi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA71C1F161B84007F7762 /* melendi.jpg */; };
+		FB4FA7291F161B96007F7762 /* Shakira.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7271F161B96007F7762 /* Shakira.png */; };
+		FB4FA72A1F161B96007F7762 /* vanesa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7281F161B96007F7762 /* vanesa.jpg */; };
 		FB5B99421F05664900BEB8F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B99411F05664900BEB8F6 /* AppDelegate.swift */; };
 		FB5B99441F05664900BEB8F6 /* ControladorBusqueda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B99431F05664900BEB8F6 /* ControladorBusqueda.swift */; };
 		FB5B994A1F05664900BEB8F6 /* Proyecto_Alex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB5B99481F05664900BEB8F6 /* Proyecto_Alex.xcdatamodeld */; };
@@ -50,6 +62,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB4FA7131F161B84007F7762 /* ariana grande.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ariana grande.jpg"; sourceTree = "<group>"; };
+		FB4FA7141F161B84007F7762 /* bruno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bruno.jpg; sourceTree = "<group>"; };
+		FB4FA7151F161B84007F7762 /* bustamante.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bustamante.jpg; sourceTree = "<group>"; };
+		FB4FA7161F161B84007F7762 /* cnco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cnco.jpg; sourceTree = "<group>"; };
+		FB4FA7171F161B84007F7762 /* dani martin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dani martin.png"; sourceTree = "<group>"; };
+		FB4FA7181F161B84007F7762 /* david bisbal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "david bisbal.png"; sourceTree = "<group>"; };
+		FB4FA7191F161B84007F7762 /* divide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = divide.jpg; sourceTree = "<group>"; };
+		FB4FA71A1F161B84007F7762 /* dvicio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dvicio.jpg; sourceTree = "<group>"; };
+		FB4FA71B1F161B84007F7762 /* la oreja.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "la oreja.jpg"; sourceTree = "<group>"; };
+		FB4FA71C1F161B84007F7762 /* melendi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = melendi.jpg; sourceTree = "<group>"; };
+		FB4FA7271F161B96007F7762 /* Shakira.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shakira.png; sourceTree = "<group>"; };
+		FB4FA7281F161B96007F7762 /* vanesa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vanesa.jpg; sourceTree = "<group>"; };
 		FB5B993E1F05664900BEB8F6 /* Proyecto Alex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proyecto Alex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5B99411F05664900BEB8F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB5B99431F05664900BEB8F6 /* ControladorBusqueda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorBusqueda.swift; sourceTree = "<group>"; };
@@ -176,6 +200,18 @@
 		FB5B99781F05694F00BEB8F6 /* Vista */ = {
 			isa = PBXGroup;
 			children = (
+				FB4FA7131F161B84007F7762 /* ariana grande.jpg */,
+				FB4FA7141F161B84007F7762 /* bruno.jpg */,
+				FB4FA7151F161B84007F7762 /* bustamante.jpg */,
+				FB4FA7161F161B84007F7762 /* cnco.jpg */,
+				FB4FA7171F161B84007F7762 /* dani martin.png */,
+				FB4FA7181F161B84007F7762 /* david bisbal.png */,
+				FB4FA7191F161B84007F7762 /* divide.jpg */,
+				FB4FA71A1F161B84007F7762 /* dvicio.jpg */,
+				FB4FA71B1F161B84007F7762 /* la oreja.jpg */,
+				FB4FA71C1F161B84007F7762 /* melendi.jpg */,
+				FB4FA7271F161B96007F7762 /* Shakira.png */,
+				FB4FA7281F161B96007F7762 /* vanesa.jpg */,
 				FB5C5D191F0661DA00D70831 /* paisaje1.jpeg */,
 				FB5C5D1A1F0661DA00D70831 /* paisaje2.jpeg */,
 				FB5C5D1B1F0661DA00D70831 /* paisaje3.jpeg */,
@@ -304,13 +340,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4FA7241F161B84007F7762 /* dvicio.jpg in Resources */,
 				FB5C5D1D1F0661DA00D70831 /* paisaje2.jpeg in Resources */,
 				FB5C5D1E1F0661DA00D70831 /* paisaje3.jpeg in Resources */,
+				FB4FA71E1F161B84007F7762 /* bruno.jpg in Resources */,
+				FB4FA7201F161B84007F7762 /* cnco.jpg in Resources */,
+				FB4FA71F1F161B84007F7762 /* bustamante.jpg in Resources */,
+				FB4FA7261F161B84007F7762 /* melendi.jpg in Resources */,
+				FB4FA7211F161B84007F7762 /* dani martin.png in Resources */,
 				FB5B99751F0566B500BEB8F6 /* Main.storyboard in Resources */,
+				FB4FA7221F161B84007F7762 /* david bisbal.png in Resources */,
+				FB4FA7251F161B84007F7762 /* la oreja.jpg in Resources */,
+				FB4FA7231F161B84007F7762 /* divide.jpg in Resources */,
 				FB5B994F1F05664900BEB8F6 /* LaunchScreen.storyboard in Resources */,
 				FB5C5D201F066E0000D70831 /* paisaje4.jpeg in Resources */,
+				FB4FA71D1F161B84007F7762 /* ariana grande.jpg in Resources */,
 				FB5B994C1F05664900BEB8F6 /* Assets.xcassets in Resources */,
+				FB4FA72A1F161B96007F7762 /* vanesa.jpg in Resources */,
 				FB5C5D1C1F0661DA00D70831 /* paisaje1.jpeg in Resources */,
+				FB4FA7291F161B96007F7762 /* Shakira.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
