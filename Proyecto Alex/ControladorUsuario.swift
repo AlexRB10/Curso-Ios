@@ -32,7 +32,7 @@ class ControladorUsuario : UIViewController, UITableViewDelegate, UITableViewDat
         nombre.text = usuario.nombre
         apellido.text = usuario.apellido
         
-        albumes = ControllerData.shareController.albumes
+        albumes = ControllerData.shareController.miAlbum
         
         self.tableView.delegate   = self
         self.tableView.dataSource = self
@@ -90,7 +90,7 @@ class ControladorUsuario : UIViewController, UITableViewDelegate, UITableViewDat
     
     //cambio de pantalla
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewControllerDestination = segue.destination as? ControladorAlbum {
+        if let viewControllerDestination = segue.destination as? ControladorCanciones {
             let indexPath = self.tableView.indexPathForSelectedRow?.row
             let canciones = self.albumes[indexPath!].pista
             viewControllerDestination.canciones = canciones

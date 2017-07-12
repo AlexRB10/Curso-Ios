@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ControladorAlbum: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ControladorCanciones: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView: UITableView!
     

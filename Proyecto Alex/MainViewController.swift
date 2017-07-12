@@ -61,7 +61,7 @@ class MainViewController : UIViewController, UICollectionViewDelegate, UICollect
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewControllerDestination = segue.destination as? ControladorAlbum {
+        if let viewControllerDestination = segue.destination as? ControladorCanciones {
             
             let indexPath = self.collectionView.indexPathsForSelectedItems?.first
             let canciones = self.datasource[(indexPath?.row)!].pista

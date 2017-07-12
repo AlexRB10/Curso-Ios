@@ -12,7 +12,7 @@ class ControladorBusqueda: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet var tableView: UITableView!
     
-    let titulos = ["Canciones","Artitas","Albunes"]
+    let titulos = ["Canciones","Artitas","Albumes"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
