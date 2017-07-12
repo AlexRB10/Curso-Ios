@@ -16,49 +16,50 @@ class ControllerData {
         
     }
     
-    var albumes : [Album] = [Album.init(nombreAlbum: "El Dorado", nombreArtista: "Shakira", fotoAlbum: "paisaje4.jpeg"),
-                             Album.init(nombreAlbum: "Munay", nombreArtista: "Vanesa Martín", fotoAlbum: "paisaje3.jpeg"),
-                             Album.init(nombreAlbum: "Quítate Las Gafas", nombreArtista: "Melendi", fotoAlbum: "paisaje2.jpeg"),
-                             Album.init(nombreAlbum: "La Montaña Rusa", nombreArtista: "Dani Martín", fotoAlbum: "paisaje1.jpeg"),
-                             Album.init(nombreAlbum: "Qué Tú Tienes", nombreArtista: "Dvicio", fotoAlbum: "paisaje1.jpeg"),
-                             Album.init(nombreAlbum: "El Planeta Imaginario", nombreArtista: "La Oreja de Van Gogh", fotoAlbum: "paisaje2.jpeg"),
-                             Album.init(nombreAlbum: "Hijos Del Mar", nombreArtista: "Davis Bisbal", fotoAlbum: "paisaje3.jpeg"),
-                             Album.init(nombreAlbum: "Primera Cita", nombreArtista: "CNCO", fotoAlbum: "paisaje4.jpeg"),
-                             Album.init(nombreAlbum: "Destino", nombreArtista: "Antonio Orozco", fotoAlbum: "paisaje1.jpeg"),
-                             Album.init(nombreAlbum: "Divide", nombreArtista: "Ed Sheeran", fotoAlbum: "paisaje2.jpeg"),
-                             Album.init(nombreAlbum: "24K Magic", nombreArtista: "Bruno Mars", fotoAlbum: "paisaje3.jpeg"),
-                             Album.init(nombreAlbum: "Dangerous Woman", nombreArtista: "Ariana Grande", fotoAlbum: "paisaje4.jpeg")]
+    var albumes : [Album] = [Album.init(nombreAlbum: "El Dorado", nombreArtista: "Shakira", fotoAlbum: "Shakira.png"),
+                             Album.init(nombreAlbum: "Munay", nombreArtista: "Vanesa Martín", fotoAlbum: "vanesa.jpg"),
+                             Album.init(nombreAlbum: "Quítate Las Gafas", nombreArtista: "Melendi", fotoAlbum: "melendi.jpg"),
+                             Album.init(nombreAlbum: "La Montaña Rusa", nombreArtista: "Dani Martín", fotoAlbum: "dani martin.png"),
+                             Album.init(nombreAlbum: "Qué Tú Tienes", nombreArtista: "Dvicio", fotoAlbum: "dvicio.jpg"),
+                             Album.init(nombreAlbum: "El Planeta Imaginario", nombreArtista: "La Oreja de Van Gogh", fotoAlbum: "la oreja.jpg"),
+                             Album.init(nombreAlbum: "Hijos Del Mar", nombreArtista: "Davis Bisbal", fotoAlbum: "david bisbal.png"),
+                             Album.init(nombreAlbum: "Primera Cita", nombreArtista: "CNCO", fotoAlbum: "cnco.jpg"),
+                             Album.init(nombreAlbum: "Amor De Los Dos", nombreArtista: "Bustamante", fotoAlbum: "bustamante.jpg"),
+                             Album.init(nombreAlbum: "Divide", nombreArtista: "Ed Sheeran", fotoAlbum: "divide.jpg"),
+                             Album.init(nombreAlbum: "24K Magic", nombreArtista: "Bruno Mars", fotoAlbum: "Bruno.jpg"),
+                             Album.init(nombreAlbum: "Dangerous Woman", nombreArtista: "Ariana Grande", fotoAlbum: "ariana Grande.jpg")]
     
     
-    var elDorado : [Pista] = [Pista.init(nombrePista: "Me Enamoré", nombreFoto: ""),
-                           Pista.init(nombrePista: "Nada", nombreFoto: ""),
-                           Pista.init(nombrePista: "Chantaje", nombreFoto: ""),
-                           Pista.init(nombrePista: "When a Woman", nombreFoto: ""),
-                           Pista.init(nombrePista: "Amarillo", nombreFoto: ""),
-                           Pista.init(nombrePista: "Perro Fiel", nombreFoto: ""),
-                           Pista.init(nombrePista: "Trap", nombreFoto: ""),
-                           Pista.init(nombrePista: "Comme moi", nombreFoto: ""),
-                           Pista.init(nombrePista: "Coconut Tree", nombreFoto: ""),
-                           Pista.init(nombrePista: "La Bicicleta", nombreFoto: ""),
-                           Pista.init(nombrePista: "Déjà vu", nombreFoto: ""),
-                           Pista.init(nombrePista: "What We Said", nombreFoto: ""),
-                           Pista.init(nombrePista: "Toneladas", nombreFoto: "")]
+    var elDorado : [Pista] = [Pista.init(nombrePista: "Me Enamoré", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "Nada", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "Chantaje", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "When a Woman", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "Amarillo", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "Perro Fiel", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "Trap", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "Comme moi", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "Coconut Tree", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "La Bicicleta", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "Déjà vu", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "What We Said", nombreFoto: "Shakira.png"),
+                              Pista.init(nombrePista: "Toneladas", nombreFoto: "Shakira.png")]
     
     
-    var munay : [Pista] = [Pista.init(nombrePista: "Complicidad", nombreFoto: ""),
-                           Pista.init(nombrePista: "Ya", nombreFoto: ""),
-                           Pista.init(nombrePista: "Si me abrazaras", nombreFoto: ""),
-                           Pista.init(nombrePista: "Inmunes", nombreFoto: ""),
-                           Pista.init(nombrePista: "Que se entere Madrid", nombreFoto: ""),
-                           Pista.init(nombrePista: "Santo y Seña", nombreFoto: ""),
-                           Pista.init(nombrePista: "Te has perdido quién soy", nombreFoto: ""),
-                           Pista.init(nombrePista: "Nunca me conoció", nombreFoto: ""),
-                           Pista.init(nombrePista: "Sucederá", nombreFoto: ""),
-                           Pista.init(nombrePista: "Descubrí", nombreFoto: ""),
-                           Pista.init(nombrePista: "El amor no se explica", nombreFoto: ""),
-                           Pista.init(nombrePista: "Manzanas envenenadas", nombreFoto: ""),
-                           Pista.init(nombrePista: "Porque queramos vernos", nombreFoto: ""),
-                           Pista.init(nombrePista: "Complicidad", nombreFoto: ""),]
+    var munay : [Pista] = [Pista.init(nombrePista: "Complicidad", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Ya", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Si me abrazaras", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Inmunes", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Que se entere Madrid", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Santo y Seña", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Te has perdido quién soy", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Nunca me conoció", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Sucederá", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Descubrí", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "El amor no se explica", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Manzanas envenenadas", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Porque queramos vernos", nombreFoto: "vanesa.jpg"),
+                           Pista.init(nombrePista: "Complicidad", nombreFoto: "vanesa.jpg")]
+    
     
     
     
