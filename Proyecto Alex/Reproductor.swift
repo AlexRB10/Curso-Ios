@@ -10,7 +10,24 @@ import UIKit
 import AVFoundation
 
 class Reproductor: UIViewController{
-    var player: AVAudioPlayer = AVAudioPlayer()
+
+    private var audioPlayer: AVAudioPlayer?
+    
+    var canciones :[Pista] = []
+    
+     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "05 - Perfect", ofType: "mp3")!)
+        print(alertSound)
+        
+        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        try! AVAudioSession.sharedInstance().setActive(true)
+        
+        try! audioPlayer = AVAudioPlayer(contentsOf: alertSound)
+        audioPlayer!.prepareToPlay()
+        audioPlayer!.play()
+    }
     
     @IBAction func play(_ sender: AnyObject){
         audioPlayer?.play()
@@ -20,19 +37,7 @@ class Reproductor: UIViewController{
         audioPlayer?.pause()
     }
     
-    private var audioPlayer: AVAudioPlayer?
-    
-     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "03 - Dive", ofType: "mp3")!)
-        print(alertSound)
-        
-        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-        try! AVAudioSession.sharedInstance().setActive(true)
-        
-        try! audioPlayer = AVAudioPlayer(contentsOf: alertSound)
-        audioPlayer!.prepareToPlay()
-        audioPlayer!.play()
+    @IBAction func stop(_ sender: AnyObject){
+        audioPlayer?.stop()
     }
 }
