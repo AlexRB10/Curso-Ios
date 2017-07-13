@@ -13,14 +13,14 @@ class Reproductor: UIViewController{
 
     private var audioPlayer: AVAudioPlayer?
     
-    @IBOutlet private var nombreCacion: UILabel?
-    @IBOutlet private var nombreAlbum: UILabel?
+    @IBOutlet private var nombreCancion: UILabel?
     @IBOutlet private var fotoCancion: UIImageView?
     @IBOutlet private var playPause: UIButton?
+    @IBOutlet private var progreso: UIProgressView?
     
     var repoduciendo : Bool = true
     
-    var canciones :[String] = ["01 - Eraser","02 - Castle on the Hill","03 - Dive","04 - Shape of You","05 - Perfect"]
+    var canciones :[Pista] = []
     var marcador = 0;
     
      override func viewDidLoad() {
@@ -42,17 +42,12 @@ class Reproductor: UIViewController{
         }
     }
     
-    @IBAction func stop(_ sender: AnyObject){
-        audioPlayer?.stop()
-        prepararCacnion()
-    }
-    
     @IBAction func atras(_ sender: AnyObject){
         moverMarcador(cambiar: -1)
     }
     
     @IBAction func alante(_ sender: AnyObject){
-        moverMarcador(cambiar: 1)
+        moverMarcador(cambiar: +1)
     }
     
     func moverMarcador(cambiar :Int) {
@@ -71,11 +66,13 @@ class Reproductor: UIViewController{
     
     func prepararCacnion(){
         
-        //self.nombreAlbum = canciones[].asfda
-        //self.fotoCancion = canciones[].foto
+       // var a: String = ((marcador + 1), " - ", canciones[marcador].nombrePista)
+        self.nombreCancion?.text = String.init(canciones[marcador].nombrePista)
         
-        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: canciones[marcador], ofType: "mp3")!)
-        print(alertSound)
+        let imageStr = String.init(format: canciones[marcador].nombreFoto)
+        fotoCancion?.image = UIImage.init(named: imageStr)
+
+        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: canciones[marcador].titulo, ofType: "mp3")!)
         
         try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
         try! AVAudioSession.sharedInstance().setActive(true)
@@ -83,5 +80,10 @@ class Reproductor: UIViewController{
         try! audioPlayer = AVAudioPlayer(contentsOf: alertSound)
         audioPlayer!.prepareToPlay()
         audioPlayer?.play()
+        
+        
+        ///barra de progreso
+        
+        progreso?.progress = Float(marcador)
     }
 }
