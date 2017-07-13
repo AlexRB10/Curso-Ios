@@ -13,21 +13,15 @@ class Reproductor: UIViewController{
 
     private var audioPlayer: AVAudioPlayer?
     
-    var canciones :[Pista] = []
+    var canciones :[String] = ["01 - Eraser","02 - Castle on the Hill","03 - Dive","04 - Shpae of You","05 - Perfect"]
+    var numeroActual = 0;
     
      override func viewDidLoad() {
         super.viewDidLoad()
         
-        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "05 - Perfect", ofType: "mp3")!)
-        print(alertSound)
-        
-        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-        try! AVAudioSession.sharedInstance().setActive(true)
-        
-        try! audioPlayer = AVAudioPlayer(contentsOf: alertSound)
-        audioPlayer!.prepareToPlay()
-        audioPlayer!.play()
-    }
+        prepararCacnion()
+        audioPlayer?.play()
+        }
     
     @IBAction func play(_ sender: AnyObject){
         audioPlayer?.play()
@@ -39,5 +33,18 @@ class Reproductor: UIViewController{
     
     @IBAction func stop(_ sender: AnyObject){
         audioPlayer?.stop()
+        prepararCacnion()
+    }
+    
+    func prepararCacnion(){
+        
+        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: canciones[numeroActual], ofType: "mp3")!)
+        print(alertSound)
+        
+        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        try! AVAudioSession.sharedInstance().setActive(true)
+        
+        try! audioPlayer = AVAudioPlayer(contentsOf: alertSound)
+        audioPlayer!.prepareToPlay()
     }
 }
