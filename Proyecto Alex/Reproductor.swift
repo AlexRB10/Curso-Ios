@@ -6,8 +6,6 @@
 //  Copyright © 2017 Alex. All rights reserved.
 //
 
-
-
 import UIKit
 import AVFoundation
 
@@ -27,7 +25,7 @@ class Reproductor: UIViewController{
      override func viewDidLoad() {
         super.viewDidLoad()
         
-        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "button-09", ofType: "mp3")!)
+        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "Dive", ofType: "mp3")!)
         print(alertSound)
         
         try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
