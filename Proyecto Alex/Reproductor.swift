@@ -16,7 +16,7 @@ class Reproductor: UIViewController{
     @IBOutlet private var nombreCancion: UILabel?
     @IBOutlet private var fotoCancion: UIImageView?
     @IBOutlet private var playPause: UIButton?
-    @IBOutlet private var progreso: UIProgressView?
+    @IBOutlet private var progreso: UISlider?
     
     var repoduciendo : Bool = true
     
@@ -34,11 +34,11 @@ class Reproductor: UIViewController{
         if repoduciendo {
             audioPlayer?.pause()
             repoduciendo = false
-            playPause?.setImage(#imageLiteral(resourceName: "pause"), for: .normal)
+            playPause?.setImage(#imageLiteral(resourceName: "play"), for: .normal)
         } else {
             audioPlayer?.play()
             repoduciendo = true
-            playPause?.setImage(#imageLiteral(resourceName: "play"), for: .normal)
+            playPause?.setImage(#imageLiteral(resourceName: "pause"), for: .normal)
         }
     }
     
@@ -84,6 +84,8 @@ class Reproductor: UIViewController{
         
         ///barra de progreso
         
-        progreso?.progress = Float(marcador)
+        //audioPlayer.
+        
+        //progreso?.progress =
     }
 }
