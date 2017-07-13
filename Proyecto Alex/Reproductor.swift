@@ -15,34 +15,26 @@ class Reproductor: UIViewController{
     var player: AVAudioPlayer = AVAudioPlayer()
     
     @IBAction func play(_ sender: AnyObject){
-        player.play()
+        audioPlayer?.play()
     }
     
     @IBAction func pause(_ sender: AnyObject){
-        player.pause()
+        audioPlayer?.pause()
     }
     
-    /*@IBAction func replay(_ sender: AnyObject){
-        player.currentTime  = 0
-    }
-    */
+    private var audioPlayer: AVAudioPlayer?
     
-    override func viewDidLoad(){
+     override func viewDidLoad() {
         super.viewDidLoad()
         
-        do{
-            let audioPahth = Bundle.main.path(forResource: "song", ofType: "mp3")
-            
-            try player = AVAudioPlayer(contensof : NSURL (fileURWithPath: audioPahth!) as URL){
-            
-                
-            }; catch {
-                //error
-            }
-            
-            
-        }
-        //funcion memoria 
+        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "button-09", ofType: "mp3")!)
+        print(alertSound)
+        
+        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        try! AVAudioSession.sharedInstance().setActive(true)
+        
+        try! audioPlayer = AVAudioPlayer(contentsOf: alertSound)
+        audioPlayer!.prepareToPlay()
+        audioPlayer!.play()
     }
-    
 }
