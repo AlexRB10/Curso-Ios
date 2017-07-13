@@ -60,4 +60,12 @@ class ControladorCanciones: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewControllerDestination = segue.destination as? Reproductor {
+            let indexPath = self.tableView.indexPathForSelectedRow?.row
+            viewControllerDestination.canciones = canciones
+            viewControllerDestination.marcador = indexPath!
+        }
+    }
+    
 }

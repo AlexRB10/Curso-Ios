@@ -11,10 +11,12 @@ import Foundation
 class Pista{
     var nombrePista :String
     var nombreFoto :String
+    var titulo :String = ""
     
-    init(nombrePista : String, nombreFoto :String) {
+    init(nombrePista : String, nombreFoto :String, titulo: String) {
         
         self.nombrePista = nombrePista
         self.nombreFoto = nombreFoto
+        self.titulo = titulo
     }
 }
