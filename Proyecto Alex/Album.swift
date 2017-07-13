@@ -12,10 +12,12 @@ class Album {
     var nombreAlbum :String
     var fotoAlbum :String
     var nombreArtista :String
+    var pista : [Pista]
     
-    init(nombreAlbum: String, nombreArtista: String,fotoAlbum: String) {
+    init(nombreAlbum: String, nombreArtista: String,fotoAlbum: String, pista : [Pista]) {
         self.nombreAlbum = nombreAlbum
         self.fotoAlbum = fotoAlbum
         self.nombreArtista = nombreArtista
+        self.pista = pista
     }
 }

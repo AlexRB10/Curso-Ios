@@ -59,4 +59,14 @@ class MainViewController : UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.zero
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewControllerDestination = segue.destination as? ControladorCanciones {
+            
+            let indexPath = self.collectionView.indexPathsForSelectedItems?.first
+            let canciones = self.datasource[(indexPath?.row)!].pista
+            viewControllerDestination.canciones = canciones
+            print(self.datasource[(indexPath?.row)!].nombreAlbum)
+        }
+    }
 }

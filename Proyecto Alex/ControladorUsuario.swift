@@ -32,7 +32,7 @@ class ControladorUsuario : UIViewController, UITableViewDelegate, UITableViewDat
         nombre.text = usuario.nombre
         apellido.text = usuario.apellido
         
-        albumes = ControllerData.shareController.albumes
+        albumes = ControllerData.shareController.miAlbum
         
         self.tableView.delegate   = self
         self.tableView.dataSource = self
@@ -57,7 +57,8 @@ class ControladorUsuario : UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Seleccionó la fila \(indexPath.row) de la sección \(titulos[indexPath.section])")
+    // print("Seleccionó la fila \(indexPath.row) de la sección \(titulos[indexPath.section])")
+       // print("\(albumes[indexPath.row].nombreAlbum)")
         
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -85,6 +86,16 @@ class ControladorUsuario : UIViewController, UITableViewDelegate, UITableViewDat
         cell.titulo?.text = albumes[indexPath.row].nombreAlbum
         cell.detalle?.text = albumes[indexPath.row].nombreArtista
         return cell
+    }
+    
+    //cambio de pantalla
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewControllerDestination = segue.destination as? ControladorCanciones {
+            let indexPath = self.tableView.indexPathForSelectedRow?.row
+            let canciones = self.albumes[indexPath!].pista
+            viewControllerDestination.canciones = canciones
+            print(self.albumes[indexPath!].nombreAlbum)
+        }
     }
     
     @IBAction func añadirPista(){
