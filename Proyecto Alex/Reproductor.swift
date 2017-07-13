@@ -25,7 +25,7 @@ class Reproductor: UIViewController{
      override func viewDidLoad() {
         super.viewDidLoad()
         
-        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "Dive", ofType: "mp3")!)
+        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "03 - Dive", ofType: "mp3")!)
         print(alertSound)
         
         try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
