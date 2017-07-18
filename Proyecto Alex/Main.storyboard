@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24r-lF-JVw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3266" y="967"/>
+            <point key="canvasLocation" x="2905" y="967"/>
         </scene>
         <!--Resultado-->
         <scene sceneID="tne-QT-ifu">
@@ -194,7 +194,7 @@
         <!--Canciones-->
         <scene sceneID="Suk-Uk-S9j">
             <objects>
-                <viewController id="vuc-Sl-pcP" customClass="ControladorAlbum" customModule="Proyecto_Alex" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vuc-Sl-pcP" customClass="ControladorCanciones" customModule="Proyecto_Alex" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LCl-Ak-ynb"/>
                         <viewControllerLayoutGuide type="bottom" id="zp8-7f-Xgd"/>
@@ -230,6 +230,7 @@
                                         <connections>
                                             <outlet property="imagen" destination="Mzc-f1-077" id="WW3-1L-J0n"/>
                                             <outlet property="titulo" destination="QD6-MT-Yqq" id="czD-NQ-ory"/>
+                                            <segue destination="MDX-kS-CQD" kind="show" id="dUw-0D-e7C"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -251,6 +252,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYS-x3-JkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1730" y="-637"/>
+        </scene>
+        <!--Reproductor-->
+        <scene sceneID="6u7-xv-887">
+            <objects>
+                <viewController id="MDX-kS-CQD" customClass="Reproductor" customModule="Proyecto_Alex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lRm-Hb-FRG"/>
+                        <viewControllerLayoutGuide type="bottom" id="BLn-aQ-Up7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3kt-ap-pJy">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r25-im-iHn">
+                                <rect key="frame" x="309" y="491" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="adelante"/>
+                                <connections>
+                                    <action selector="alante:" destination="MDX-kS-CQD" eventType="touchUpInside" id="0HW-Ka-S1g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-iz-YvP">
+                                <rect key="frame" x="16" y="491" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="atras"/>
+                                <connections>
+                                    <action selector="atras:" destination="MDX-kS-CQD" eventType="touchUpInside" id="Ipu-dJ-CeW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3b-7i-ov0">
+                                <rect key="frame" x="36" y="324" width="304" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IbG-h5-vGe">
+                                <rect key="frame" x="16" y="20" width="343" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mc5-Zr-Ok6">
+                                <rect key="frame" x="16" y="390" width="343" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsE-mM-EAU">
+                                <rect key="frame" x="153" y="472" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="pause"/>
+                                <connections>
+                                    <action selector="play:" destination="MDX-kS-CQD" eventType="touchUpInside" id="xFj-02-hnL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="fotoCancion" destination="IbG-h5-vGe" id="bvT-Ez-bf7"/>
+                        <outlet property="nombreCancion" destination="F3b-7i-ov0" id="iY3-eg-gEb"/>
+                        <outlet property="playPause" destination="UsE-mM-EAU" id="Dv6-wv-m53"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HHz-bF-deK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2925.5999999999999" y="-637.33133433283365"/>
         </scene>
         <!--Buscar-->
         <scene sceneID="xmB-HQ-syr">
@@ -456,6 +521,11 @@
             <point key="canvasLocation" x="-378" y="-637"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="adelante" width="128" height="128"/>
+        <image name="atras" width="128" height="128"/>
+        <image name="pause" width="128" height="128"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LcO-E9-V5r"/>
     </inferredMetricsTieBreakers>

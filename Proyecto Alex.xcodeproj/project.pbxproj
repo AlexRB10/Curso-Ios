@@ -27,6 +27,7 @@
 		FB47EC471F1E742E0060B6DF /* 14 - Bibia Be Ye Ye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB47EC371F1E742E0060B6DF /* 14 - Bibia Be Ye Ye.mp3 */; };
 		FB47EC481F1E742E0060B6DF /* 15 - Nancy Mulligan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB47EC381F1E742E0060B6DF /* 15 - Nancy Mulligan.mp3 */; };
 		FB47EC491F1E742E0060B6DF /* 16 - Save Myself.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB47EC391F1E742E0060B6DF /* 16 - Save Myself.mp3 */; };
+		FB47EC4C1F1E75FE0060B6DF /* ControladorCanciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47EC4B1F1E75FE0060B6DF /* ControladorCanciones.swift */; };
 		FB4FA71D1F161B84007F7762 /* ariana grande.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7131F161B84007F7762 /* ariana grande.jpg */; };
 		FB4FA71E1F161B84007F7762 /* bruno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7141F161B84007F7762 /* bruno.jpg */; };
 		FB4FA71F1F161B84007F7762 /* bustamante.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB4FA7151F161B84007F7762 /* bustamante.jpg */; };
@@ -61,7 +62,6 @@
 		FB6644621F0BEC7500DC9E36 /* ControladorUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6644611F0BEC7500DC9E36 /* ControladorUsuario.swift */; };
 		FB705DBF1F0E8B62006BD329 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB705DBE1F0E8B62006BD329 /* MainViewController.swift */; };
 		FB705DC31F0E9AF8006BD329 /* PhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB705DC21F0E9AF8006BD329 /* PhotoGridCell.swift */; };
-		FB904B6B1F0D453E000B708B /* ControladorCanciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB904B6A1F0D453E000B708B /* ControladorCanciones.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +108,7 @@
 		FB47EC371F1E742E0060B6DF /* 14 - Bibia Be Ye Ye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14 - Bibia Be Ye Ye.mp3"; sourceTree = "<group>"; };
 		FB47EC381F1E742E0060B6DF /* 15 - Nancy Mulligan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "15 - Nancy Mulligan.mp3"; sourceTree = "<group>"; };
 		FB47EC391F1E742E0060B6DF /* 16 - Save Myself.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "16 - Save Myself.mp3"; sourceTree = "<group>"; };
+		FB47EC4B1F1E75FE0060B6DF /* ControladorCanciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorCanciones.swift; sourceTree = "<group>"; };
 		FB4FA7131F161B84007F7762 /* ariana grande.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ariana grande.jpg"; sourceTree = "<group>"; };
 		FB4FA7141F161B84007F7762 /* bruno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bruno.jpg; sourceTree = "<group>"; };
 		FB4FA7151F161B84007F7762 /* bustamante.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bustamante.jpg; sourceTree = "<group>"; };
@@ -148,7 +149,6 @@
 		FB6644611F0BEC7500DC9E36 /* ControladorUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorUsuario.swift; sourceTree = "<group>"; };
 		FB705DBE1F0E8B62006BD329 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FB705DC21F0E9AF8006BD329 /* PhotoGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridCell.swift; sourceTree = "<group>"; };
-		FB904B6A1F0D453E000B708B /* ControladorCanciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorCanciones.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,7 +283,6 @@
 		FB5B99771F05694100BEB8F6 /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
-				FB47EC281F1E741A0060B6DF /* Reproductor.swift */,
 				FB5B997A1F0569A200BEB8F6 /* Artista.swift */,
 				FB5B997B1F0569A200BEB8F6 /* Album.swift */,
 				FB5B997C1F0569A200BEB8F6 /* Pista.swift */,
@@ -324,10 +323,11 @@
 		FB5B99791F05695800BEB8F6 /* Controlador */ = {
 			isa = PBXGroup;
 			children = (
+				FB47EC4B1F1E75FE0060B6DF /* ControladorCanciones.swift */,
 				FB5B99431F05664900BEB8F6 /* ControladorBusqueda.swift */,
 				FB6644611F0BEC7500DC9E36 /* ControladorUsuario.swift */,
-				FB904B6A1F0D453E000B708B /* ControladorCanciones.swift */,
 				FB705DBE1F0E8B62006BD329 /* MainViewController.swift */,
+				FB47EC281F1E741A0060B6DF /* Reproductor.swift */,
 			);
 			name = Controlador;
 			sourceTree = "<group>";
@@ -652,7 +652,6 @@
 				FB5B997F1F0569A200BEB8F6 /* Pista.swift in Sources */,
 				FB5B99441F05664900BEB8F6 /* ControladorBusqueda.swift in Sources */,
 				FB5B997D1F0569A200BEB8F6 /* Artista.swift in Sources */,
-				FB904B6B1F0D453E000B708B /* ControladorCanciones.swift in Sources */,
 				FB5B994A1F05664900BEB8F6 /* Proyecto_Alex.xcdatamodeld in Sources */,
 				FB5B99421F05664900BEB8F6 /* AppDelegate.swift in Sources */,
 				FB705DC31F0E9AF8006BD329 /* PhotoGridCell.swift in Sources */,
@@ -660,6 +659,7 @@
 				FB6644621F0BEC7500DC9E36 /* ControladorUsuario.swift in Sources */,
 				FB6644601F0BEAA700DC9E36 /* Usuario.swift in Sources */,
 				FB5B997E1F0569A200BEB8F6 /* Album.swift in Sources */,
+				FB47EC4C1F1E75FE0060B6DF /* ControladorCanciones.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@ class Reproductor: UIViewController{
     @IBOutlet private var nombreCancion: UILabel?
     @IBOutlet private var fotoCancion: UIImageView?
     @IBOutlet private var playPause: UIButton?
-    @IBOutlet private var progreso: UISlider?
+    @IBOutlet private var progressView: UIProgressView?
     
     var repoduciendo : Bool = true
     
@@ -81,11 +81,16 @@ class Reproductor: UIViewController{
         audioPlayer!.prepareToPlay()
         audioPlayer?.play()
         
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateAudioProgressView), userInfo: nil, repeats: true)
+        progressView?.setProgress(Float((audioPlayer?.currentTime)!/(audioPlayer?.duration)!), animated: false)
         
-        ///barra de progreso
         
-        //audioPlayer.
-        
-        //progreso?.progress =
+    }
+    
+    func updateAudioProgressView(){
+        if (audioPlayer?.isPlaying)!{
+            // Update progress
+            progressView?.setProgress(Float((audioPlayer?.currentTime)!/(audioPlayer?.duration)!), animated: true)
+        }
     }
 }
