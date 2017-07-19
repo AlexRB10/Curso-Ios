@@ -50,6 +50,7 @@ class Reproductor: UIViewController{
         moverMarcador(cambiar: +1)
     }
     
+    
     func moverMarcador(cambiar :Int) {
         if (0 >= (marcador + cambiar)){
             marcador = 0
@@ -59,13 +60,13 @@ class Reproductor: UIViewController{
             marcador += cambiar
         }
         prepararCacnion()
-        audioPlayer?.play()
+        repoduciendo = true
+        playPause?.setImage(#imageLiteral(resourceName: "pause"), for: .normal)
     }
 
     
     
     func prepararCacnion(){
-        
        // var a: String = ((marcador + 1), " - ", canciones[marcador].nombrePista)
         self.nombreCancion?.text = String.init(canciones[marcador].nombrePista)
         
@@ -77,19 +78,17 @@ class Reproductor: UIViewController{
         try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
         try! AVAudioSession.sharedInstance().setActive(true)
         
+        
         try! audioPlayer = AVAudioPlayer(contentsOf: alertSound)
-        audioPlayer!.prepareToPlay()
+        audioPlayer?.prepareToPlay()
         audioPlayer?.play()
         
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateAudioProgressView), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(barraProgresoAnimacion), userInfo: nil, repeats: true)
         progressView?.setProgress(Float((audioPlayer?.currentTime)!/(audioPlayer?.duration)!), animated: false)
-        
-        
     }
     
-    func updateAudioProgressView(){
+    func barraProgresoAnimacion(){
         if (audioPlayer?.isPlaying)!{
-            // Update progress
             progressView?.setProgress(Float((audioPlayer?.currentTime)!/(audioPlayer?.duration)!), animated: true)
         }
     }

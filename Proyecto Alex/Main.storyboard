@@ -270,7 +270,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="adelante"/>
                                 <connections>
-                                    <action selector="alante:" destination="MDX-kS-CQD" eventType="touchUpInside" id="0HW-Ka-S1g"/>
+                                    <action selector="alante:" destination="MDX-kS-CQD" eventType="touchUpInside" id="oNP-I6-gA4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhJ-iz-YvP">
@@ -278,39 +278,42 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="atras"/>
                                 <connections>
-                                    <action selector="atras:" destination="MDX-kS-CQD" eventType="touchUpInside" id="Ipu-dJ-CeW"/>
+                                    <action selector="atras:" destination="MDX-kS-CQD" eventType="touchUpInside" id="z3J-Rf-qDi"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3b-7i-ov0">
-                                <rect key="frame" x="36" y="324" width="304" height="21"/>
+                                <rect key="frame" x="36" y="8" width="304" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IbG-h5-vGe">
-                                <rect key="frame" x="16" y="20" width="343" height="296"/>
+                                <rect key="frame" x="17" y="37" width="343" height="323"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mc5-Zr-Ok6">
-                                <rect key="frame" x="16" y="390" width="343" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsE-mM-EAU">
                                 <rect key="frame" x="153" y="472" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="pause"/>
                                 <connections>
-                                    <action selector="play:" destination="MDX-kS-CQD" eventType="touchUpInside" id="xFj-02-hnL"/>
+                                    <action selector="play:" destination="MDX-kS-CQD" eventType="touchUpInside" id="L9f-67-tkt"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mc5-Zr-Ok6">
+                                <rect key="frame" x="17" y="368" width="342" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.4823431862" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Reproductor" id="VKF-fx-S6n"/>
                     <connections>
-                        <outlet property="fotoCancion" destination="IbG-h5-vGe" id="bvT-Ez-bf7"/>
-                        <outlet property="nombreCancion" destination="F3b-7i-ov0" id="iY3-eg-gEb"/>
-                        <outlet property="playPause" destination="UsE-mM-EAU" id="Dv6-wv-m53"/>
+                        <outlet property="fotoCancion" destination="IbG-h5-vGe" id="ijf-PH-5NB"/>
+                        <outlet property="nombreCancion" destination="F3b-7i-ov0" id="I4o-Rh-MGy"/>
+                        <outlet property="playPause" destination="UsE-mM-EAU" id="d4W-IV-mcl"/>
+                        <outlet property="progressView" destination="mc5-Zr-Ok6" id="JYB-jy-V40"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHz-bF-deK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -329,13 +332,6 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buscar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asw-BO-dEb">
-                                <rect key="frame" x="166" y="323" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <searchBar contentMode="redraw" fixedFrame="YES" showsCancelButton="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66F-7O-dCe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -346,9 +342,9 @@
                                 </connections>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvz-qH-tko">
-                                <rect key="frame" x="113" y="178" width="161" height="199"/>
+                                <rect key="frame" x="107" y="178" width="161" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Busqueda"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="push" id="zdz-DV-2Xz"/>
                                 </connections>
@@ -398,7 +394,7 @@
             </objects>
             <point key="canvasLocation" x="-407" y="169"/>
         </scene>
-        <!--Albunes-->
+        <!--Á lbumes-->
         <scene sceneID="UDd-pq-GRe">
             <objects>
                 <viewController id="4A6-ea-oD2" customClass="MainViewController" customModule="Proyecto_Alex" customModuleProvider="target" sceneMemberID="viewController">
@@ -447,7 +443,11 @@
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="QdD-pr-967"/>
-                    <navigationItem key="navigationItem" title="Albunes" id="JdW-J0-nkv"/>
+                    <navigationItem key="navigationItem" id="JdW-J0-nkv">
+                        <string key="title" base64-UTF8="YES">
+w4EQbGJ1bWVzA
+</string>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="3eO-OH-1DL" id="N8X-ze-XHW"/>
                     </connections>
@@ -527,6 +527,7 @@
         <image name="pause" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LcO-E9-V5r"/>
+        <segue reference="IKd-a6-8fr"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

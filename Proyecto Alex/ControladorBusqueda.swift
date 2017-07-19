@@ -12,12 +12,17 @@ class ControladorBusqueda: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet var tableView: UITableView!
     
-    let titulos = ["Canciones","Artitas","Albumes"]
+    let titulos = ["Canciones"]
+    var canciones :[Pista] = []
+    var album :[Album] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate   = self
         self.tableView.dataSource = self
+        canciones = ControllerData.shareController.divide
+        album = ControllerData.shareController.miBusqueda
     }
     
     // MARK: - UITableViewDelegate
@@ -57,14 +62,20 @@ class ControladorBusqueda: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // let cell = UITableViewCell.init(style: .default, reuseIdentifier: "mycellId")
+        //let cell = UITableViewCell.init(style: .default, reuseIdentifier: "mycellId")
         let cell = tableView.dequeueReusableCell(withIdentifier: "CeldaPersonalizada") as! CeldaPerzonalizada
         
-        let imageStr = String.init(format: "paisaje%lu.jpeg", indexPath.row+1)
-        cell.imagen?.image = UIImage.init(named: imageStr)
-        cell.titulo?.text = "Hola"
-        cell.detalle?.text = "Detalles"
-        
+        if (titulos[0] == titulos[indexPath.section]){
+            let imageStr = String.init(format: canciones[indexPath.row].nombreFoto, indexPath.row+1)
+            cell.imagen?.image = UIImage.init(named: imageStr)
+            cell.titulo?.text = canciones[indexPath.row].nombrePista
+            cell.detalle?.text = album[0].nombreAlbum
+        } else {
+            //let imageStr = String.init(format: album[indexPath.row].fotoAlbum, indexPath.row+1)
+            //cell.imagen?.image = UIImage.init(named: imageStr)
+            cell.titulo?.text = album[0].nombreAlbum
+            cell.detalle?.text = album[0].nombreArtista
+        }
         return cell
     }
 }

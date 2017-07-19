@@ -13,7 +13,9 @@ class ControllerData {
     static let shareController = ControllerData()
     var albumes: [Album]
     var miAlbum: [Album]
+    var miBusqueda: [Album]
     private init(){
+        
         albumes = [Album.init(nombreAlbum: "El Dorado", nombreArtista: "Shakira", fotoAlbum: "Shakira.png",pista: elDorado),
                    Album.init(nombreAlbum: "Munay", nombreArtista: "Vanesa Martín", fotoAlbum: "vanesa.jpg", pista: munay),
                    Album.init(nombreAlbum: "Quítate Las Gafas", nombreArtista: "Melendi", fotoAlbum: "melendi.jpg", pista: quitateLasGafas),
@@ -33,6 +35,9 @@ class ControllerData {
                     Album.init(nombreAlbum: "24K Magic", nombreArtista: "Bruno Mars", fotoAlbum: "Bruno.jpg", pista: magic),
                     Album.init(nombreAlbum: "Dangerous Woman", nombreArtista: "Ariana Grande", fotoAlbum: "ariana Grande.jpg", pista: dangerousWoman ),
                     Album.init(nombreAlbum: "El Dorado", nombreArtista: "Shakira", fotoAlbum: "Shakira.png",pista: elDorado),]
+        
+        miBusqueda = [
+            Album.init(nombreAlbum: "Divide", nombreArtista: "Ed Sheeran", fotoAlbum: "divide.jpg", pista: divide),]
         
     }
     
